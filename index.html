@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name · Homepage</title>
+  <style>
+    body {
+      font-family: -apple-system, system-ui, sans-serif;
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 16px;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 2em;
+    }
+    h1 {
+      font-size: 1.8em;
+      margin: 0.2em 0;
+    }
+    nav a {
+      margin-right: 1em;
+      text-decoration: none;
+      color: #0366d6;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 0.4em;
+      border-bottom: 1px solid #eee;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    footer {
+      font-size: 0.9em;
+      color: #666;
+      border-top: 1px solid #ddd;
+      padding-top: 1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Theoretical Computer Science · Algorithms with Predictions · Learning-Augmented Systems</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I am a researcher interested in theoretical computer science, robust algorithms, and machine learning for systems. My work focuses on the intersection of learning-augmented algorithms, caching, and resource scheduling.</p>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <ul>
+      <li><b>Learning-Augmented Caching</b>: Designing algorithms with provable consistency and robustness guarantees.</li>
+      <li><b>Resource Scheduling</b>: Multi-satellite scheduling and heterogeneous systems management.</li>
+      <li><b>Computational Biology</b>: Modeling immune therapy outcomes with graph-based learning.</li>
+    </ul>
+  </section>
+
+  <section id="publications">
+    <h2>Selected Publications</h2>
+    <ul>
+      <li>ANCHOR: Learning-based Robust GPU Caching (2025)</li>
+      <li>ExGuard: Robustifying Belady-style Predictors (2024)</li>
+      <li>TMB-SerVal: Biomarker Discovery for Immunotherapy (2023)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a><br>
+       GitHub: <a href="https://github.com/your-username" target="_blank">your-username</a></p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> Your Name
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
