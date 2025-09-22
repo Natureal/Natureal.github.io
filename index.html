@@ -5,6 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Peng Chen · Homepage</title>
   <style>
+   .pub-box {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 15px 0;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    .pub-title {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .pub-title a {
+      text-decoration: none;
+      color: #2c3e50;
+    }
+    .pub-title a:hover {
+      color: #0066cc;
+    }
+    .pub-authors {
+      font-size: 0.95em;
+      color: #555;
+      margin-bottom: 8px;
+    }
+    .pub-intro {
+      font-size: 0.9em;
+      color: #333;
+    }
     body {
       font-family: -apple-system, system-ui, sans-serif;
       max-width: 800px;
@@ -78,11 +107,34 @@
 
   <section id="publications">
     <h2>Selected Publications</h2>
-    <p>[NeurIPS 2025] <a href="https://arxiv.org/abs/2507.16242" target="_blank">Robustifying Learning-Augmented Caching Efficiently without Compromising 1-Consistency</a></p>
-    <ul>
-      <li><b>Peng Chen</b>, Hailiang Zhao, Jiaji Zhang, Xueyan Tang, Yixuan Wang, Shuiguang Deng.</li>
-      <li>Hailiang Zhao, Xueyan Tang, <b>Peng Chen</b>, and Shuiguang Deng. Learning-Augmented Algorithms for the Bahncard Problem. <em>The 38th Annual Conference on Neural Information Processing Systems (NeurIPS 2024)</em></li>
-    </ul>
+
+    <div class="pub-box">
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2507.16242" target="_blank">
+          [NeurIPS 2025] Robustifying Learning-Augmented Caching Efficiently without Compromising 1-Consistency
+        </a>
+      </div>
+      <div class="pub-authors">
+        <strong>Peng Chen</strong>, Hailiang Zhao, Jiaji Zhang, Xueyan Tang, Yixuan Wang, Shuiguang Deng
+      </div>
+      <div class="pub-intro">
+        Abstract: This paper proposes a lightweight framework named <em>Guard</em> that efficiently improves the robustness of a broad class of learning-augmented caching algorithms while preserving their 1-consistency.
+      </div>
+    </div>
+    
+    <div class="pub-box">
+      <div class="pub-title">
+        <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/cd96cb9a239c37b39dbf34f3f5a4c56f-Paper-Conference.pdf" target="_blank">
+          [NeurIPS 2024] Learning-Augmented Algorithms for the Bahncard Problem
+        </a>
+      </div>
+      <div class="pub-authors">
+        Hailiang Zhao, Xueyan Tang, <strong>Peng Chen</strong>, and Shuiguang Deng
+      </div>
+      <div class="pub-intro">
+        Abstract: This paper introduces <em>PFSUM</em>, a learning-augmented algorithm that leverages both historical data and short-term future information to enhance online decision-making.
+      </div>
+    </div>
   </section>
 
   <section id="Others">
