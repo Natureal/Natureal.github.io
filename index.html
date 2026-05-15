@@ -4,6 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Peng Chen · Homepage</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <style>
    .pub-box {
       border: 1px solid #ccc;
@@ -96,50 +104,78 @@
   
   <section id="about">
     <h2>About</h2>
-    <p>I am a Ph.D. student in the Department of Computer Science at Zhejiang University, advised by Prof. <a href="https://person.zju.edu.cn/en/shuiguang" target="_blank">Shuiguang Deng</a>, and co-advised by Prof. <a href="https://person.zju.edu.cn/en/hliangzhao" target="_blank">Hailiang Zhao</a> (ZJU) and Prof. <a href="https://personal.ntu.edu.sg/asxytang/" target="_blank">Xueyan Tang</a> (NTU). My research seeks essential, insightful ideas in algorithm design and bridges the development of algorithms and systems. Advance the thinking, not just the solution.</p>
+    <p>I am a Ph.D. student in the Department of Computer Science at Zhejiang University, advised by Prof. <a href="https://person.zju.edu.cn/en/shuiguang" target="_blank">Shuiguang Deng</a>, and co-advised by Prof. <a href="https://person.zju.edu.cn/en/hliangzhao" target="_blank">Hailiang Zhao</a> (ZJU) and Prof. <a href="https://personal.ntu.edu.sg/asxytang/" target="_blank">Xueyan Tang</a> (NTU). My research seeks insightful ideas in theoretical algorithm design with the development of systems. In particular, I am interested in bridging the gap between the theoretical guarantees of learning-augmented algorithms and practical performance in ML for Systems.</p>
   </section>
 
   <section id="research">
-    <h2>Research</h2>
-    Learning-Augmented Algorithms
+    <h2>Current Research</h2>
+    Learning-Augmented Algorithms (a.k.a. Algorithms with Predictions)
     <ul>
         <li>Online Caching</li>
         <li>The Bahncard Problem</li>
     </ul>
     Learning-Augmented Systems
     <ul>
-      <li>GPU Caching Systems</li>
+      <li>MoE Load Balancer for LLM Inference (with <a href="https://en.wikipedia.org/wiki/Alibaba_Group" target="_blank">Alibaba</a>)</li>
+      <li>GPU Caching Systems (with <a href="https://en.wikipedia.org/wiki/Kuaishou" target="_blank">Kuaishou</a>)</li>
     </ul>
   </section>
 
   <section id="publications">
     <h2>Selected Publications</h2>
+    <div class="pub-box">
+      <div class="pub-title">
+        <a href="" target="_blank">
+          [ICML'26] <u>Towards Optimal Robustness in Learning-Augmented Paging</u>
+        </a>
+      </div>
+      <div class="pub-authors">
+        <strong>Peng Chen</strong>, Hailiang Zhao*, Xueyan Tang, Yixuan Wang, Shuiguang Deng*
+      </div>
+      <div class="pub-intro">
+        Abstract: This paper introduces the notion of a relative prediction budget and achieves the best possible robustness for learning-augmented paging, namely $(H_k + O(1))$-robustness, closing a gap in this field.
+      </div>
+    </div>
+    
+    <div class="pub-box">
+      <div class="pub-title">
+        <a href="https://arxiv.org/pdf/2509.20979" target="_blank">
+          [arXiv'26] <u>Toward Robust and Efficient ML-Based GPU Caching for Modern Inference</u>
+        </a>
+      </div>
+      <div class="pub-authors">
+	<strong>Peng Chen</strong>, Jiaji Zhang, Hailiang Zhao*, Yirong Zhang, Shenyao Chen, Jiahong Yu, Xueyan Tang, Yixuan Wang, Hao Li, Jianping Zou, Gang Xiong, Kingsum Chow, Shuibing He, Shuiguang Deng*
+      </div>
+      <div class="pub-intro">
+        Abstract: This paper explores ML for GPU caching systems, proposing a learning-augmented LRU algorithm that guarantees near-optimal performance under accurate predictions while maintaining bounded worst-case degradation under poor predictions.
+      </div>
+    </div>
 
     <div class="pub-box">
       <div class="pub-title">
-        <a href="https://arxiv.org/abs/2507.16242" target="_blank">
-          [NeurIPS 2025] <u>Robustifying Learning-Augmented Caching Efficiently without Compromising 1-Consistency</u>
+        <a href="https://papers.nips.cc/paper_files/paper/2025/hash/b1e7f61f40d68b2177857bfcb195a507-Abstract-Conference.html" target="_blank">
+          [NeurIPS'25] <u>Robustifying Learning-Augmented Caching Efficiently without Compromising 1-Consistency</u>
         </a>
       </div>
       <div class="pub-authors">
         <strong>Peng Chen</strong>, Hailiang Zhao*, Jiaji Zhang, Xueyan Tang, Yixuan Wang, Shuiguang Deng*
       </div>
       <div class="pub-intro">
-        Abstract: This paper proposes a lightweight framework named Guard that efficiently improves the robustness of a broad class of ML-based caching algorithms while preserving their 1-consistency.
+        Abstract: This paper proposes a lightweight framework named Guard that efficiently improves the robustness of a broad class of ML-based caching algorithms while preserving their 1-consistency. <a href="https://arxiv.org/pdf/2507.16242" target="_blank">[arXiv version]</a>
       </div>
     </div>
     
     <div class="pub-box">
       <div class="pub-title">
-        <a href="https://proceedings.neurips.cc/paper_files/paper/2024/file/cd96cb9a239c37b39dbf34f3f5a4c56f-Paper-Conference.pdf" target="_blank">
-          [NeurIPS 2024] <u>Learning-Augmented Algorithms for the Bahncard Problem</u>
+        <a href="https://proceedings.neurips.cc/paper_files/paper/2024/hash/cd96cb9a239c37b39dbf34f3f5a4c56f-Abstract-Conference.html" target="_blank">
+          [NeurIPS'24] <u>Learning-Augmented Algorithms for the Bahncard Problem</u>
         </a>
       </div>
       <div class="pub-authors">
         Hailiang Zhao, Xueyan Tang*, <strong>Peng Chen</strong>, and Shuiguang Deng
       </div>
       <div class="pub-intro">
-        Abstract: This paper introduces PFSUM, a learning-augmented algorithm that leverages both historical data and short-term future information to enhance online decision-making.
+        Abstract: This paper introduces PFSUM, a learning-augmented algorithm that leverages both historical data and short-term future information to enhance online decision-making. <a href="https://arxiv.org/pdf/2410.15257" target="_blank">[arXiv version]</a>
       </div>
     </div>
   </section>
@@ -147,6 +183,7 @@
   <section id="Awards">
     <h2>Awards</h2>
     <ul>
+        <li>ICML 2026 Gold Reviwer Award</li>
         <li>NeurIPS 2025 Scholar Award</li>
         <li>2016 ACM-ICPC Asia Regional Contest (China-Final), Gold Medal</li>
     </ul>
